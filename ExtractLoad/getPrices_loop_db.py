@@ -1,3 +1,5 @@
+# getPrices_loop_db.py
+# Script para coletar preços de Bitcoin e Commodities e armazenar em um banco de dados
 import time
 import pandas as pd
 from sqlalchemy import create_engine
@@ -7,6 +9,7 @@ from getComm import get_comm_df
 from dotenv import load_dotenv
 import os
 
+# Carregar variáveis de ambiente do arquivo .env
 load_dotenv()
 
 # Configurações do banco de dados

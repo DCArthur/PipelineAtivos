@@ -1,3 +1,5 @@
+# getBitcoin.py
+# Script para coletar o preço atual do Bitcoin e retornar como um DataFrame
 import requests
 from datetime import datetime
 import pandas as pd
@@ -16,6 +18,7 @@ def get_bitcoin_df():
     moeda = data['data']['currency']
     horario_coleta = datetime.now()
 
+    # Criar DataFrame
     df = pd.DataFrame([{
         'ativo': ativo,
         'preco': preco,
