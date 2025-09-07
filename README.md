@@ -65,3 +65,7 @@ Usar os scripts SQL em `Tables/Silver/` e `Tables/Gold/` para transformar e anal
 
 Este projeto será utilizado para automatizar o monitoramento de preços e vendas de ativos financeiros, facilitando análises históricas, geração de relatórios e dashboards e suporte à tomada de decisão em investimentos.
 
+## Info
+
+Projeto feito durante participação na Jornada de Dados ([www.suajornadadedados.com.br](http://www.suajornadadedados.com.br))
+
