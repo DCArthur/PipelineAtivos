@@ -16,6 +16,7 @@ create_table.sql
 Silver/ # Tabelas de vendas normalizadas e enriquecidas
 silver_sales_normalized.sql
 silver_sales_enriched.sql
+silver_prices_hourly.sql
 Gold/ # Visualizações analíticas
 gold_kpi_by_customer.sql
 gold_last_7_assets_sales.sql
@@ -32,6 +33,7 @@ gold_last_7_assets_sales.sql
 
 3. **Camada Prata**
 - Normaliza e enriquece os dados de vendas com informações de preço (`silver_sales_normalized.sql`, `silver_sales_enriched.sql`).
+- Adiciona agregação de preços por hora para os ativos, facilitando análises temporais (`silver_prices_hourly.sql`).
 
 4. **Camada Ouro**
 - Visualizações analíticas para KPIs e vendas recentes (`gold_kpi_by_customer.sql`, `gold_last_7_assets_sales.sql`).
