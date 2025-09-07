@@ -42,7 +42,7 @@ if __name__ == "__main__":
         df = pd.concat([df_btc, df_comm], ignore_index=True)
 
         # Inserir no banco de dados
-        df.to_sql('Cotacoes', engine, if_exists='append', index=False)
+        df.to_sql('bronze_cotacoes', engine, if_exists='append', index=False)
 
         print("Dados inseridos com sucesso!")
 

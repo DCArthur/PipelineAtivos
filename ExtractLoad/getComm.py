@@ -9,7 +9,7 @@ def get_comm_df():
     dfs = []
     for sym in symbols:
         # Pegar o preço mais recente
-        ultimo_df = yf.Ticker(sym).history(period="1d", interval="1m")[['Close']].tail(1)
+        ultimo_df = yf.Ticker(sym).history(period="1mo", interval="1d")[['Close']].tail(1)
         # Transformar em DataFrame com as colunas corretas
         ultimo_df = ultimo_df.rename(columns={'Close': 'preco'})
         ultimo_df['ativo'] = sym
